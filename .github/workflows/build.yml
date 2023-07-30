@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
             context: .
-            tags: ghcr.io/${{ steps.repo.outputs.lowercase }}:latest
+            tags: ghcr.io/MackayChandler/${{ steps.repo.outputs.lowercase }}:latest
             push: ${{ github.ref == 'refs/heads/main'}}
             cache-from: type=registry,ref=${{ steps.repo.outputs.lowercase }}:latest
             cache-to: type=inline
