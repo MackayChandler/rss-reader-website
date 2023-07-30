@@ -10,9 +10,11 @@ jobs:
       - name: Checkout Master
         uses: actions/checkout@v2
 
-      - name: Get Branch name
-        id: branch-name
-        uses: tj-actions/branch-names@v6
+       # Make Repo name lowercase for Docker
+      - id: repo
+        uses: ASzc/change-string-case-action@v2
+        with:
+         string: ${{github.repository}}
         
       - name: Set up Docker Buildx
         id: buildx
