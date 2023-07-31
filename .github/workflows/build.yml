@@ -31,5 +31,5 @@ jobs:
 
       - name: 'Build Inventory Image'
         run: |
-          docker build . --tag ghcr.io/${{github.actor}}/rss-parser-website:latest
-          docker push ghcr.io/${{github.actor}}/rss-parser-website:latest
+          docker build . --tag ghcr.io/mackaychandler/rss-parser-website:latest
+          docker push ghcr.io/mackaychandler/rss-parser-website:latest
