@@ -17,4 +17,4 @@
 
  # Navigate to the application entry point and run the image
 
- CMD [ "npm", "run", "build" ]
+ CMD [ "npm", "run", "dev" ]
