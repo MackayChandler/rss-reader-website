@@ -13,7 +13,9 @@
  RUN npm install
 
  # Copy everything from ourlocal directory to the image in the code directory
- COPY . /app
+ COPY . .
+
+ EXPOSE 5173
 
  # Navigate to the application entry point and run the image
 
